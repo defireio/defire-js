@@ -1,8 +1,7 @@
 {
   "name": "defire",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "Defire Js Library",
-  "private": true,
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "repository": {
