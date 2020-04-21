@@ -12,7 +12,7 @@ import { Action, executeAction } from "./action";
 import { validateAddress, validateArray } from "../utils/utils";
 import { ETH_ADDRESS } from "./constants";
 import { decodeParameters } from "../utils/utils";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 import { InvalidAddress, InvalidArray, InvalidParams } from "../utils/errors";
 
 export class Actions {

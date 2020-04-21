@@ -7,7 +7,7 @@ import { validateAddress } from "./utils/utils";
 import { InvalidAddress } from "./utils/errors";
 import { ETH_ADDRESS } from "./common/constants";
 import { loadAssets } from "./utils/assets";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 
 export class Query {
   config: Configuration;

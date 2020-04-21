@@ -6,7 +6,7 @@ module.exports = {
     Defire: ["./dist/index.js"],
   },
   output: {
-    path: path.resolve(__dirname, "./dist/web"),
+    path: path.resolve(__dirname, "./builds"),
     library: "Defire",
   },
 };

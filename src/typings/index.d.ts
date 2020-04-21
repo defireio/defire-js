@@ -1,5 +1,5 @@
 declare module "typings" {
-  import JSBI from "JSBI";
+  import JSBI from "jsbi";
 
   type Address = string;
 

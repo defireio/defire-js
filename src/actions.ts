@@ -30,7 +30,7 @@ import {
   InvalidParams,
 } from "./utils/errors";
 import { ETH_ADDRESS } from "./common/constants";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 
 export class Actions {
   config: Configuration;

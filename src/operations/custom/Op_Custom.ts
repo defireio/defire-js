@@ -1,7 +1,7 @@
 import { Account } from "typings";
 import { Operation } from "../Operation";
 import { amountToString } from "../../utils/utils";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 
 export const load = (account: Account): Function => {
   class Custom extends Operation {

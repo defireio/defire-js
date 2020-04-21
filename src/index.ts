@@ -5,7 +5,7 @@ import { loadAssets } from "./utils/assets";
 import { loadOperations } from "./operations";
 import { Query } from "./query";
 import { Actions } from "./actions";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 
 export function Defire(mainAccount: MainAccountParam, config?: Configuration) {
   const finalConfig: Configuration = loadConfig(config);

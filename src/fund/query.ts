@@ -3,7 +3,7 @@ import { Fund as FundContract } from "../contracts/fund";
 import { ERC20 } from "../contracts/ERC20";
 import { Query as OperableQuery } from "../common/operable";
 import * as ethUtils from "ethereumjs-util";
-import JSBI from "JSBI";
+import JSBI from "jsbi";
 
 export class Query extends OperableQuery {
   constructor(address: Address, account: Account) {
