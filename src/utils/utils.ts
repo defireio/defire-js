@@ -9,7 +9,7 @@ export const amountToString = (obj: number | string | JSBI): string => {
     return obj;
   } else if (typeof obj === "number") {
     return obj.toString();
-  } else if (typeof obj === "object") {
+  } else if (obj instanceof JSBI) {
     return obj.toString(10);
   } else {
     throw new Error("Invalid amount type.");
@@ -61,7 +61,7 @@ export const validateAmount = (item: any, error: Error): void => {
   if (
     typeof item !== "string" &&
     typeof item !== "number" &&
-    typeof item !== "object"
+    !(item instanceof JSBI)
   ) {
     throw error;
   }
