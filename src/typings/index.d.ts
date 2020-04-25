@@ -18,14 +18,25 @@ declare module "typings" {
       DEFIRE_ACCOUNT: Address;
       ETH: Address;
       DAI: Address;
+      USDC: Address;
+      WBTC: Address;
       CDAI: Address;
+      CUSDC: Address;
+      CWBTC: Address;
+      CETH: Address;
       WETH: Address;
-      OP_COMPOUND_DAI_CDAI: Address;
-      OP_COMPOUND_CDAI_DAI: Address;
-      OP_UNISWAP_DAI_WETH: Address;
-      OP_UNISWAP_WETH_DAI: Address;
-      OP_UNISWAP_DAI_ETH: Address;
-      OP_UNISWAP_ETH_DAI: Address;
+      OP_COMPOUND_CETH_TO_ETH: Address;
+      OP_COMPOUND_ETH_TO_CETH: Address;
+      OP_COMPOUND_CDAI_TO_DAI: Address;
+      OP_COMPOUND_DAI_TO_CDAI: Address;
+      OP_COMPOUND_CUSDC_TO_USDC: Address;
+      OP_COMPOUND_USDC_TO_CUSDC: Address;
+      OP_COMPOUND_CWBTC_TO_WBTC: Address;
+      OP_COMPOUND_WBTC_TO_CWBTC: Address;
+      OP_UNISWAP_DAI_TO_ETH: Address;
+      OP_UNISWAP_ETH_TO_DAI: Address;
+      OP_UNISWAP_DAI_TO_WETH: Address;
+      OP_UNISWAP_WETH_TO_DAI: Address;
     };
   }
 

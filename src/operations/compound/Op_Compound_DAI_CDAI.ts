@@ -9,7 +9,7 @@ export const load = (config: Configuration, account: Account): Function => {
       validateObjectAmount(params, "amountDAI");
       super(
         account,
-        config.contracts.OP_COMPOUND_DAI_CDAI,
+        config.contracts.OP_COMPOUND_DAI_TO_CDAI,
         [amountToString(params.amountDAI)],
         [], //No params types
         [], //No params

@@ -3,14 +3,14 @@ import { Operation } from "../Operation";
 import { validateObjectAmount, amountToString } from "../../utils/utils";
 
 export const load = (config: Configuration, account: Account): Function => {
-  class Compound_CDAI_DAI extends Operation {
+  class Compound_CWBTC_WBTC extends Operation {
     constructor(params: any) {
       //Validate
-      validateObjectAmount(params, "amountCDAI");
+      validateObjectAmount(params, "amountCWBTC");
       super(
         account,
-        config.contracts.OP_COMPOUND_CDAI_TO_DAI,
-        [amountToString(params.amountCDAI)],
+        config.contracts.OP_COMPOUND_CWBTC_TO_WBTC,
+        [amountToString(params.amountCWBTC)],
         [], //No params types
         [], //No params
         false
@@ -18,5 +18,5 @@ export const load = (config: Configuration, account: Account): Function => {
     }
   }
 
-  return Compound_CDAI_DAI;
+  return Compound_CWBTC_WBTC;
 };
