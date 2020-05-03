@@ -1,9 +1,4 @@
-import {
-  Address,
-  Transaction,
-  Configuration,
-  Account,
-} from "typings";
+import { Address, Transaction, Configuration, Account } from "typings";
 
 export class EthersjsAccount implements Account {
   config: Configuration;
@@ -19,12 +14,12 @@ export class EthersjsAccount implements Account {
     this.address = address;
 
     this.signMessage = (message: string): Promise<string> => {
-      const signer = this.etherJs.getSigner(0);
+      const signer = this.etherJs.getSigner(this.address);
       return signer.signMessage(message);
     };
 
     this.sendTransaction = async (txParams: Transaction): Promise<string> => {
-      const signer = this.etherJs.getSigner(0);
+      const signer = this.etherJs.getSigner(this.address);
       const result = await signer.sendTransaction(txParams);
       return result.hash;
     };
