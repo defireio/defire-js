@@ -64,7 +64,6 @@ class Query {
 }
 
 export class Operation implements IOperation {
-  isFundOperation: boolean;
   address: Address;
   query: OperationQuery;
 
@@ -74,10 +73,8 @@ export class Operation implements IOperation {
     inAssets: string[],
     paramTypes: string[],
     paramValues: any[],
-    isFundOperation: boolean
   ) {
     this.address = address;
-    this.isFundOperation = isFundOperation;
 
     this.query = new Query(
       this.address,

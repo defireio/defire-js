@@ -20,7 +20,6 @@ export const load = (
         [amountToString(params["amount" + outAsset])],
         [], //No params types
         [], //No params
-        false
       );
     }
   }

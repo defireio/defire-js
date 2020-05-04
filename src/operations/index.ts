@@ -51,8 +51,8 @@ export const loadOperations = (config: Configuration, account: Account) => {
     },
     Defire: {
       Fund: {
-        Deposit: load_Op_Fund_Deposit(account),
-        Withdraw: load_Op_Fund_Withdraw(account),
+        Deposit: load_Op_Fund_Deposit(config, account),
+        Withdraw: load_Op_Fund_Withdraw(config, account),
       },
     },
     Wrappers: {

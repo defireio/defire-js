@@ -146,7 +146,6 @@ declare module "typings" {
   }
 
   export interface Operation {
-    isFundOperation: boolean;
     address: Address;
     query: OperationQuery;
   }

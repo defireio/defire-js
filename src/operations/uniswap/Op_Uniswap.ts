@@ -36,8 +36,7 @@ export const load = (
         config.contracts[contractName],
         [amountToString(params["amount" + inAsset])],
         ["uint256", "uint256"],
-        [minAmount, deadline],
-        false
+        [minAmount, deadline]
       );
     }
   }

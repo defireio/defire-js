@@ -17,7 +17,7 @@ export const load = (account: Account): Function => {
         types.push(param.type);
         values.push(amountToString(params.value));
       }
-      super(account, params.operationAddress, amounts, types, values, false);
+      super(account, params.operationAddress, amounts, types, values);
     }
   }
   return Custom;
