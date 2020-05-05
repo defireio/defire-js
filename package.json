@@ -1,6 +1,6 @@
 {
   "name": "defire",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "description": "Defire Js Library",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
